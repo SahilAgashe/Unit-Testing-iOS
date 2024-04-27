@@ -13,7 +13,20 @@
 		81A8443C2BDCE5DC006B13D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81A8443A2BDCE5DC006B13D6 /* Main.storyboard */; };
 		81A8443E2BDCE5DD006B13D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81A8443D2BDCE5DD006B13D6 /* Assets.xcassets */; };
 		81A844412BDCE5DD006B13D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81A8443F2BDCE5DD006B13D6 /* LaunchScreen.storyboard */; };
+		81A844492BDCEABD006B13D6 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A844482BDCEABD006B13D6 /* SignupViewController.swift */; };
+		81A844542BDCEDFC006B13D6 /* SAA_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A844532BDCEDFC006B13D6 /* SAA_AppTests.swift */; };
+		81A8445B2BDCEE37006B13D6 /* TestingUITextFieldPropertiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A8445A2BDCEE37006B13D6 /* TestingUITextFieldPropertiesTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		81A844552BDCEDFC006B13D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81A844292BDCE5DC006B13D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81A844302BDCE5DC006B13D6;
+			remoteInfo = "SAA-App";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		81A844312BDCE5DC006B13D6 /* SAA-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SAA-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +37,21 @@
 		81A8443D2BDCE5DD006B13D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81A844402BDCE5DD006B13D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81A844422BDCE5DD006B13D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81A844482BDCEABD006B13D6 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		81A844512BDCEDFC006B13D6 /* SAA-AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SAA-AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81A844532BDCEDFC006B13D6 /* SAA_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAA_AppTests.swift; sourceTree = "<group>"; };
+		81A8445A2BDCEE37006B13D6 /* TestingUITextFieldPropertiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingUITextFieldPropertiesTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		81A8442E2BDCE5DC006B13D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81A8444E2BDCEDFC006B13D6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				81A844332BDCE5DC006B13D6 /* SAA-App */,
+				81A844522BDCEDFC006B13D6 /* SAA-AppTests */,
 				81A844322BDCE5DC006B13D6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				81A844312BDCE5DC006B13D6 /* SAA-App.app */,
+				81A844512BDCEDFC006B13D6 /* SAA-AppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +82,49 @@
 		81A844332BDCE5DC006B13D6 /* SAA-App */ = {
 			isa = PBXGroup;
 			children = (
+				81A8444A2BDCEAEA006B13D6 /* Application */,
+				81A8444B2BDCEC09006B13D6 /* Controller */,
+				81A8444C2BDCEC4D006B13D6 /* Supporting Files */,
+			);
+			path = "SAA-App";
+			sourceTree = "<group>";
+		};
+		81A8444A2BDCEAEA006B13D6 /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				81A844342BDCE5DC006B13D6 /* AppDelegate.swift */,
 				81A844362BDCE5DC006B13D6 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		81A8444B2BDCEC09006B13D6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				81A844382BDCE5DC006B13D6 /* ViewController.swift */,
+				81A844482BDCEABD006B13D6 /* SignupViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		81A8444C2BDCEC4D006B13D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				81A8443A2BDCE5DC006B13D6 /* Main.storyboard */,
 				81A8443D2BDCE5DD006B13D6 /* Assets.xcassets */,
 				81A8443F2BDCE5DD006B13D6 /* LaunchScreen.storyboard */,
 				81A844422BDCE5DD006B13D6 /* Info.plist */,
 			);
-			path = "SAA-App";
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		81A844522BDCEDFC006B13D6 /* SAA-AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				81A844532BDCEDFC006B13D6 /* SAA_AppTests.swift */,
+				81A8445A2BDCEE37006B13D6 /* TestingUITextFieldPropertiesTests.swift */,
+			);
+			path = "SAA-AppTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +147,24 @@
 			productReference = 81A844312BDCE5DC006B13D6 /* SAA-App.app */;
 			productType = "com.apple.product-type.application";
 		};
+		81A844502BDCEDFC006B13D6 /* SAA-AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81A844572BDCEDFC006B13D6 /* Build configuration list for PBXNativeTarget "SAA-AppTests" */;
+			buildPhases = (
+				81A8444D2BDCEDFC006B13D6 /* Sources */,
+				81A8444E2BDCEDFC006B13D6 /* Frameworks */,
+				81A8444F2BDCEDFC006B13D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81A844562BDCEDFC006B13D6 /* PBXTargetDependency */,
+			);
+			name = "SAA-AppTests";
+			productName = "SAA-AppTests";
+			productReference = 81A844512BDCEDFC006B13D6 /* SAA-AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +177,10 @@
 				TargetAttributes = {
 					81A844302BDCE5DC006B13D6 = {
 						CreatedOnToolsVersion = 15.0.1;
+					};
+					81A844502BDCEDFC006B13D6 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 81A844302BDCE5DC006B13D6;
 					};
 				};
 			};
@@ -116,6 +198,7 @@
 			projectRoot = "";
 			targets = (
 				81A844302BDCE5DC006B13D6 /* SAA-App */,
+				81A844502BDCEDFC006B13D6 /* SAA-AppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +214,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		81A8444F2BDCEDFC006B13D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,11 +230,29 @@
 			files = (
 				81A844392BDCE5DC006B13D6 /* ViewController.swift in Sources */,
 				81A844352BDCE5DC006B13D6 /* AppDelegate.swift in Sources */,
+				81A844492BDCEABD006B13D6 /* SignupViewController.swift in Sources */,
 				81A844372BDCE5DC006B13D6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		81A8444D2BDCEDFC006B13D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81A844542BDCEDFC006B13D6 /* SAA_AppTests.swift in Sources */,
+				81A8445B2BDCEE37006B13D6 /* TestingUITextFieldPropertiesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		81A844562BDCEDFC006B13D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81A844302BDCE5DC006B13D6 /* SAA-App */;
+			targetProxy = 81A844552BDCEDFC006B13D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		81A8443A2BDCE5DC006B13D6 /* Main.storyboard */ = {
@@ -294,7 +402,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4CJW76Y9FL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "SAA-App/Info.plist";
+				INFOPLIST_FILE = "SAA-App/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -322,7 +430,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4CJW76Y9FL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "SAA-App/Info.plist";
+				INFOPLIST_FILE = "SAA-App/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -338,6 +446,42 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		81A844582BDCEDFC006B13D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4CJW76Y9FL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Sahil.Amrut.Agashe.com.SAA-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SAA-App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SAA-App";
+			};
+			name = Debug;
+		};
+		81A844592BDCEDFC006B13D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4CJW76Y9FL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Sahil.Amrut.Agashe.com.SAA-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SAA-App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SAA-App";
 			};
 			name = Release;
 		};
@@ -358,6 +502,15 @@
 			buildConfigurations = (
 				81A844462BDCE5DD006B13D6 /* Debug */,
 				81A844472BDCE5DD006B13D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81A844572BDCEDFC006B13D6 /* Build configuration list for PBXNativeTarget "SAA-AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81A844582BDCEDFC006B13D6 /* Debug */,
+				81A844592BDCEDFC006B13D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
