@@ -16,6 +16,8 @@
 		81A844492BDCEABD006B13D6 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A844482BDCEABD006B13D6 /* SignupViewController.swift */; };
 		81A844542BDCEDFC006B13D6 /* SAA_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A844532BDCEDFC006B13D6 /* SAA_AppTests.swift */; };
 		81A8445B2BDCEE37006B13D6 /* TestingUITextFieldPropertiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A8445A2BDCEE37006B13D6 /* TestingUITextFieldPropertiesTests.swift */; };
+		81A8445D2BDCF9D8006B13D6 /* SignupFormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A8445C2BDCF9D8006B13D6 /* SignupFormValidator.swift */; };
+		81A8445F2BDD744A006B13D6 /* SignupFormValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A8445E2BDD744A006B13D6 /* SignupFormValidatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		81A844512BDCEDFC006B13D6 /* SAA-AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SAA-AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81A844532BDCEDFC006B13D6 /* SAA_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAA_AppTests.swift; sourceTree = "<group>"; };
 		81A8445A2BDCEE37006B13D6 /* TestingUITextFieldPropertiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingUITextFieldPropertiesTests.swift; sourceTree = "<group>"; };
+		81A8445C2BDCF9D8006B13D6 /* SignupFormValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormValidator.swift; sourceTree = "<group>"; };
+		81A8445E2BDD744A006B13D6 /* SignupFormValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormValidatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 				81A8444A2BDCEAEA006B13D6 /* Application */,
 				81A8444B2BDCEC09006B13D6 /* Controller */,
 				81A8444C2BDCEC4D006B13D6 /* Supporting Files */,
+				81A8445C2BDCF9D8006B13D6 /* SignupFormValidator.swift */,
 			);
 			path = "SAA-App";
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 			children = (
 				81A844532BDCEDFC006B13D6 /* SAA_AppTests.swift */,
 				81A8445A2BDCEE37006B13D6 /* TestingUITextFieldPropertiesTests.swift */,
+				81A8445E2BDD744A006B13D6 /* SignupFormValidatorTests.swift */,
 			);
 			path = "SAA-AppTests";
 			sourceTree = "<group>";
@@ -230,6 +236,7 @@
 			files = (
 				81A844392BDCE5DC006B13D6 /* ViewController.swift in Sources */,
 				81A844352BDCE5DC006B13D6 /* AppDelegate.swift in Sources */,
+				81A8445D2BDCF9D8006B13D6 /* SignupFormValidator.swift in Sources */,
 				81A844492BDCEABD006B13D6 /* SignupViewController.swift in Sources */,
 				81A844372BDCE5DC006B13D6 /* SceneDelegate.swift in Sources */,
 			);
@@ -239,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81A8445F2BDD744A006B13D6 /* SignupFormValidatorTests.swift in Sources */,
 				81A844542BDCEDFC006B13D6 /* SAA_AppTests.swift in Sources */,
 				81A8445B2BDCEE37006B13D6 /* TestingUITextFieldPropertiesTests.swift in Sources */,
 			);
